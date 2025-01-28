@@ -1,0 +1,32 @@
+<!-- HTMLコメント -->
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta charset="UTF-8">
+		<font color="191970"><title>書籍検索</title>
+	</head>
+	<body bgcolor=#fffff>
+		<form action="http://ictpc05/goods/jsp/SmpBk02.jsp" method="POST">
+			<h2>書籍名検索</h2>
+			<hr>
+			<p>
+			<input type="text" name="name">※あいまい検索が可能です<br>
+			<br>
+			検索順
+			<select name="order">
+				<option value="new">出版日の新しい順</option>
+				<option value="old">出版日の古い順</option>
+				<option value="high">価格の高い順</option>
+				<option value="low">価格の安い順</option>
+				<option value="ISBN">IBSNコード順</option>
+			</select><br>
+			<br>
+			<input type="submit" value="検索"><input type="reset" value="クリア"><br>
+			<br>
+			<a href="http://ictpc05/goods/jsp/HTML/Smpjsp100.html" >メインメニューに戻る</a><br>
+			<a href="http://ictpc05/goods/jsp/HTML/Smpjsp100.html" ><img src="../../image/book2.png" width="200" height="200"></a>
+			</p>
+			</font>
+		</form>	
+	</body>
+</html>
