@@ -3,6 +3,7 @@ Cartset.javaの説明<br>
 2.getter,setterメソッドを使い値の取得および代入を行いました。<br>
   ArrayListを作り、コマンドラインで入力した商品が入ります。<br>
   単価と個数は数値型なのでtoStringメソッドで文字列として出力されています。<br>
+<br>
 Smpjsp100～103.html SmpBk01～03.jspの説明<br>
 1.web上で動く書籍検索できるコードを書きました
 2.Smpjsp100.htmlからSmpjsp101～103.htmlに移動することができ、Smpjsp101.htmlはISBNコード検索ができ<br>
