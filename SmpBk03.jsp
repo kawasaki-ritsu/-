@@ -57,6 +57,9 @@
 				<hr>
 				<p>
 					<%
+					if(!rs.next()){
+						out.println("<p>該当する書籍は見つかりませんでした</p>");
+					}else{
 						while(rs.next()){
 						out.println("<table border=\"1\">");
 						out.print("<tr>");
@@ -75,6 +78,7 @@
 						out.print("<hr>");
 						out.println("<table border=\"1\">");
 						}
+					}
 						rs.close();
 						prest.close();
 						cn.close();
