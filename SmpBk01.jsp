@@ -35,6 +35,9 @@
 				<h2>IBSNコード検索結果</h2>
 				<hr>
 					<%
+					if(!rs.next()){
+						out.println("<p>該当する書籍は見つかりませんでした</p>");
+					}else{
 						if(rs.next()){
 						out.println("<p>IBSNコード:" +isbn+ "<br></p>");
 						out.println("<table border=\"1\">");
@@ -55,6 +58,7 @@
 						}else{
 							out.println();
 						}
+					}
 						rs.close();
 						st.close();
 						cn.close();
